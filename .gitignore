@@ -1,3 +1,6 @@
 # vim
 *.swp
 *.swo
+
+# bin file
+./go-test-example
