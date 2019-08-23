@@ -3,4 +3,4 @@
 *.swo
 
 # bin file
-./go-test-example
+go-test-example
