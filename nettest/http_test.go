@@ -3,6 +3,7 @@ package nettest
 import (
 	"encoding/json"
 	"io"
+	"log"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -36,7 +37,9 @@ func Test_VerifyDataErrCode(t *testing.T) {
 	defer errServer.Close()
 
 	err := VerifyData(errServer.URL)
-	assert.NotNil(t, err)
+	if assert.NotNil(t, err) {
+		log.Println("错误: ", err.Error())
+	}
 }
 
 func Test_VerifyDataErrResult(t *testing.T) {
