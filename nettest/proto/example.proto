@@ -4,7 +4,7 @@ option java_multiple_files = true;
 option java_package = "io.grpc.test.hello";
 option java_outer_classname = "Hello";
 
-package Test;
+package proto;
 
 message HelloReq {
 	string Msg = 1;

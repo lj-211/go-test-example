@@ -1,4 +1,0 @@
-package nettest
-
-func CallGrpcClient() {
-}
