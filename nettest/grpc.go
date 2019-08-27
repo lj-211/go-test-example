@@ -1,1 +1,4 @@
 package nettest
+
+func CallGrpcClient() {
+}

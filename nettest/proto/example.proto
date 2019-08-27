@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.test.hello";
+option java_outer_classname = "Hello";
+
+package Test;
+
+message HelloReq {
+	string Msg = 1;
+}
+
+message HelloRes {
+	uint32 id = 1;
+}
+
+service Hello {
+    rpc SayHello (HelloReq) returns (HelloRes);
+}
